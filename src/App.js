@@ -44,9 +44,9 @@ function App() {
                 className={`btn btn-toggle-theme is-${theme}`}
                 onClick={(e) => {
                     e.target.style = 'animation: rotate 0.5s linear';
-                    setTimeout(() => {
+                    
                         e.target.style = '';
-                    }, 500);
+                    
                     const toggleTheme =
                         theme === 'light' ? 'dark' : 'light';
                     dispatch(actions.setChangeThemeAction(toggleTheme));
